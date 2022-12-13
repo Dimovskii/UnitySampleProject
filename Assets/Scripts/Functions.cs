@@ -1,29 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Calculator : MonoBehaviour
+public class Functions
 {
-    public InputField firstNumber;
-    public InputField secondNumber;
-    public Text resultOut;
-
-    public float first, second, result;
-
-    private void DotAndComma()
-    {
-        firstNumber.text = firstNumber.text.Replace('.', ',');
-        secondNumber.text = secondNumber.text.Replace('.', ',');
-    }
-
-    public void Convertation()
-    {
-        DotAndComma();
-        first = float.Parse(firstNumber.text);
-        second = float.Parse(secondNumber.text);
-    }
-
     public void Dividing()
     {
         Convertation();
